@@ -1,0 +1,20 @@
+@import '../colors';
+
+.footer {
+  height: 10rem;
+  background-color: $ikea-blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    &-paragraph {
+      margin-right: 1rem;
+    }
+  }
+}

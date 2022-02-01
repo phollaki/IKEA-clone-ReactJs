@@ -1,0 +1,51 @@
+@import '../colors';
+
+.banner {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  padding: 5rem 2rem 1rem 2rem;
+
+  &__left {
+    background-image: url('../../public/ikea.avif');
+    background-size: cover;
+    height: 40rem;
+    background-position: center;
+    position: relative;
+
+    &-logo {
+      position: absolute;
+      z-index: 20;
+      height:50rem;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__right {
+    background-color: $ikea-yellow;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &-title {
+      flex: 0.8;
+      display: flex;
+      margin-left: 2rem;
+      font-size: 2.4rem;
+      align-items: center;
+    }
+    &-hr {
+      border: 0.1px solid $black;
+    }
+    &-paragraph {
+      flex: 0.2;
+      display: flex;
+      align-items: center;
+      margin-left: 2rem;
+    }
+  }
+}
